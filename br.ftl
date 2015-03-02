@@ -1,12 +1,6 @@
 ${bootstrap}
-<h1>This is a template that says : Hello ${name}.</h1>
-Today is ${date}
-And we're done!
+<h1>This is a template that says Nothing</h1>
 
-<h4>A la ligne.....</h4>
+${"THis sHOULD bE cApitliazed"?capitalize}
 
-Boum
-
-${"GreEN mouse"?capitalize}
-
-Last one!
+<h4>This note was written by ${name} on ${date}.</h4>
