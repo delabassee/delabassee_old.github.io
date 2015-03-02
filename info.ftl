@@ -1,5 +1,6 @@
-This is a template that says : Hello unknow.
-Today is 2015-03-01T17:34:29.001-08:00[America/Los_Angeles]
+<h1>This is a template that says : Hello ${name}.</h1>
+Today is ${date}
 
 
-Done!
+Done! 
+${bootstrap}
