@@ -44,7 +44,7 @@ Domain Events are usually implemented as JPA entities.
 
 In real life most things are connected, directly or indirectly. Mimicking this approach when building large software systems tends to bring unnecessary complexity and poor performance. DDD provides tactics to help you sort these things out, aggregates being one of the most important ones. Aggregates help with decoupling of large structures by setting rules for relations between entities. An aggregate is essentially a vey closely related set of entities and value objects. An aggregate root is a special kind of entity in the aggregate that controls external access to the set of closely related entities and value objects.
 
-Cargo is the central aggregate in the application. The classes in the cargo aggregate are in the [`net.java.cargotracker.domain.model.cargo`](http://java.net/projects/cargotracker/sources/svn/show/src/main/java/net/java/cargotracker/domain/model/cargo) package. Cargo is the aggregate root and the aggregate also contains the Value Objects delivery, itinerary, leg and a few more classes.
+Cargo is the central aggregate in the application. The classes in the cargo aggregate are in the [`net.java.cargotracker.domain.model.cargo`](https://java.net/projects/cargotracker/sources/svn/show/trunk/src/main/java/net/java/cargotracker/domain/model/cargo) package. Cargo is the aggregate root and the aggregate also contains the Value Objects delivery, itinerary, leg and a few more classes.
 
 ![ ](/ct/pic/aggregate.png)
 
@@ -80,7 +80,7 @@ On the other hand, if the service can be implemented strictly using the domain l
 
 ##Application Services
 
-Application services represent the high level business operations for the system and constitute the application layer. They provide a high-level abstraction for clients to use when interacting with the domain. The [`net.java.cargotracker.application`](http://java.net/projects/cargotracker/sources/svn/show/src/main/java/net/java/cargotracker/application) package container all the services for the application such as [BookingService](http://java.net/projects/cargotracker/sources/svn/content/trunk/src/main/java/net/java/cargotracker/application/BookingService.java) and [HandlingEventService](http://java.net/projects/cargotracker/sources/svn/content/trunk/src/main/java/net/java/cargotracker/application/HandlingEventService.java). The application services are a natural place to apply concerns such as pooling, transactions and security. This is why application services are typically implemented using EJB or transactional CDI beans.
+Application services represent the high level business operations for the system and constitute the application layer. They provide a high-level abstraction for clients to use when interacting with the domain. The [`net.java.cargotracker.application`](https://java.net/projects/cargotracker/sources/svn/show/trunk/src/main/java/net/java/cargotracker/applicationn) package container all the services for the application such as [BookingService](http://java.net/projects/cargotracker/sources/svn/content/trunk/src/main/java/net/java/cargotracker/application/BookingService.java) and [HandlingEventService](http://java.net/projects/cargotracker/sources/svn/content/trunk/src/main/java/net/java/cargotracker/application/HandlingEventService.java). The application services are a natural place to apply concerns such as pooling, transactions and security. This is why application services are typically implemented using EJB or transactional CDI beans.
 
 ![ ](/ct/pic/booking_service.png)
 
