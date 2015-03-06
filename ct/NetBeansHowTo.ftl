@@ -1,9 +1,8 @@
 ${bootstrap}${markdown}
 <#--title=How to setup Cargo Tracker in NetBeans-->
-<#--auhtor=Reza Rahman-->
 ##Prerequisites
 
-* JDK 8 or higher
+* JDK 8 and higher
 * GlassFish 4.1
 * NetBeans 8 or higher (NetBeans 8.1 recommended)
 
